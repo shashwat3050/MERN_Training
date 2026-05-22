@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0" />
+  <title>Document</title>
+
+  <style>
+    input {
+      outline: none;
+      border: none;
+      border-bottom: 1px solid;
+    }
+
+    fieldset {
+      background-color: rgb(246, 246, 235);
+    }
+
+    table,
+    td,
+    tr {
+      border: 2px solid;
+      text-align: center;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center; background-color: rgb(235, 113, 113)">
+    Sports Physical Form
+  </h1>
+  <form>
+    <fieldset>
+      <legend>Atdlete Information</legend>
+      <ul>
+        <li>
+          <label for="name">Name: </label>
+          <input type="text" id="name" placeholder="Enter Your Full Name" required />
+        </li>
+
+        <li>
+          <label for="school">School/Team Name: </label>
+          <input type="text" id="school" placeholder="Enter Your School/Team Name" value="Parul University" readonly />
+        </li>
+
+        <li>
+          <label for="sport">Sport: </label>
+          <input type="text" id="sport" placeholder="Enter sport name" required />
+        </li>
+
+        <li>
+          <label for="parent">Parent/Guardian Name: </label>
+          <input type="text" id="parent" placeholder="Enter full name" required />
+        </li>
+
+        <li>
+          <label for="contact">Contact: </label>
+          <input type="text" id="contact" placeholder="Enter contact no." required />
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Medical History for Atdlete</legend>
+      <ul>
+        <li>
+          History of Concussions:
+          <input type="radio" name="concussions" id="concussions-yes" value="concussions-yes" required />
+          <label for="concussions-yes">Yes</label>
+          <input type="radio" name="concussions" id="concussions-no" value="concussions-no" required />
+          <label for="concussions-no">No</label>
+        </li>
+
+        <li>
+          <label for="parent">Previous Surgeries: </label>
+          <input type="text" id="parent" placeholder="Enter details here" required />
+        </li>
+
+        <li>
+          Any Bone fracture?
+          <input type="radio" name="fracture" id="fracture-yes" value="fracture-yes" required />
+          <label for="fracture-yes">Yes</label>
+          <input type="radio" name="fracture" id="fracture-no" value="fracture-no" required />
+          <label for="fracture-no">No</label>
+        </li>
+
+        <li>
+          Astdama or Breatding Problems?
+          <input type="radio" name="astdama" id="astdama-yes" value="astdama-yes" required />
+          <label for="astdama-yes">Yes</label>
+          <input type="radio" name="astdama" id="astdama-no" value="astdama-no" required />
+          <label for="astdama-no">No</label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Date of Birtd and Time</legend>
+      <ul>
+        <li>
+          <label for="dob">Date of Birtd: </label>
+          <input type="date" name="dob" id="dob" />
+        </li>
+        <li>
+          <label for="time">Time: </label>
+          <input type="time" name="time" id="time" />
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Text Area</legend>
+      <ul>
+        <li>
+          <p><label for="text">Summary for your last Operation</label></p>
+          <textarea name="text" id="text" rows="5" cols="70" placeholder="Enter your Summary......"></textarea>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Documents</legend>
+      <label for="data">Drop your last Medical Report: </label>
+      <input style="border-bottom: none" type="file" name="data" id="data" accept=".pdf" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkbox/Number/Select(Dropdown)</legend>
+      <input type="checkbox" name="check" id="check" value="yes-check" required />
+      <label for="check">I agree to all tde Terms & Conditions mentioned.</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Select Attribute</legend>
+      <label for="state">Select your State: </label>
+      <select name="state" id="state" required>
+        <option value="null">-Select Here-</option>
+        <option value="Uttar Pradesh">Uttar Pradesh</option>
+        <option value="Delhi">Delhi</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Haryana">Haryana</option>
+        <option value="Gujrat">Gujrat</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Table</legend>
+      <table>
+        <tdead>
+          <tr>
+            <th>Emp Code</th>
+            <th>Emp Name</th>
+            <th>Job Title</th>
+            <th>Salary(LPA)</th>
+          </tr>
+        </tdead>
+        <tbody>
+          <tr>
+            <td>11</td>
+            <td>Rohan</td>
+            <td>SWE</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>62</td>
+            <td>Aisha</td>
+            <td>HR</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>78</td>
+            <td>Sumit</td>
+            <td>Team Lead</td>
+            <td>20</td>
+          </tr>
+        </tbody>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Daily Routine</legend>
+      <table>
+        
+        <thead>
+          <tr>
+            <th colspan="7">Time Table for Primary School</th>
+          </tr
+          <tr>
+            <td>Time</td>
+            <td>8:00am-8:30am</td>
+            <td>8:30am-9:30am</td>
+            <td>9:30-10:30:00 am</td>
+            <td>10:30am-11:00am</td>
+            <td>11:00am-12:pm</td>
+            <td>12:00pm-1:pm</td>
+          </tr>
+        </thead>
+        <tr>
+          <td>Monday</td>
+          <td rowspan="6">Assembly</td>
+          <td>Maths</td>
+          <td>Social Science</td>
+          <td rowspan="6">Break</td>
+          <td>Computer</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>Science</td>
+          <td>Hindi</td>
+          <td>Maths</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Maths</td>
+          <td>Creative Arts</td>
+          <td>Computer</td>
+          <td>Social Science</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>Maths</td>
+          <td>Science</td>
+          <td>Computer</td>
+          <td>Hindi</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>Maths</td>
+          <td>English</td>
+          <td>Creative Arts</td>
+          <td>Social Science</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Social Science</td>
+          <td>Hindi</td>
+          <td>Maths</td>
+          <td>Science</td>
+        </tr>
+
+        <tfoot>
+          <tr>
+            <td colspan="7"><i>This time table will be effective from : 19/05/2026</i></td>
+          </tr>
+        </tfoot>
+      </table>
+    </fieldset>
+
+    <a href="action-page.html"><button type="submit">Submit</button></a>
+    <button type="reset">Reset</button>
+  </form>
+</body>
+
+</html>
