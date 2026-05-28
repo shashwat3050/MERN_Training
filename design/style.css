@@ -7,11 +7,14 @@
             box-sizing: border-box;
             
         }
+        .cover{
+            background-color: rgb(37, 135, 248);;
+        }
 
         .image {
             position: relative;
-            height: 150px;
-            width: 150px;
+            height: 175px;
+            width: 175px;
             border-radius: 50%;
             /* background-color: #4070f4; */
             padding: 3px;
@@ -37,7 +40,9 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 400px;
+            max-height: 520px;
+            height: 100%;
+            max-width: 440px;
             width: 100%;
             background-color: #f9dae6;
             border-radius: 25px;
@@ -79,8 +84,18 @@
         .contact-info{
             display: flex;
         }
+        .message{
+            border-radius: 15px;
+             box-shadow: 0 5px 10px rgb(0, 0, 0.1,0.2);
+             padding: 10px;
+            margin: 20px;
+            text-decoration: none;
+            color:rgb(252, 252, 252);
+            background-color: rgb(37, 135, 248);;
+        }
         .contact {
-            border-radius: 8px;
+            border-radius: 15px;
+            border: 1px solid rgb(37, 135, 248);
              box-shadow: 0 5px 10px rgb(0, 0, 0.1,0.2);
              padding: 10px;
             margin: 20px;
@@ -94,9 +109,15 @@
         }
         .social-reach{
              border-radius: 15px;
+             border: 1px solid rgb(37, 135, 248);
              box-shadow: 0 5px 10px rgb(0, 0, 0.1,0.1);
              padding: 10px;
             margin: 10px;
             text-decoration: none;
             color:rgb(64, 63, 63);
         }
+        .name{
+            color: rgb(37, 135, 248);
+        }
+
+    
