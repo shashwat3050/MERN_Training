@@ -5,17 +5,17 @@
     font-family: sans-serif;
 }
 
-body {
-    background-color: #f1f3f6;
-}
+/* body {
+    background-color: #ffffff;
+} */
 
 header {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .top-nav {
     width: 100%;
-    background-color: #e5e5e5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,8 +32,9 @@ header {
 }
 
 .button1 {
+    background-color: #ffffff;
     border: none;
-    padding: 10px 18px;
+    padding: 10px 20px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
@@ -41,34 +42,34 @@ header {
 
 #flip {
     background-color: yellow;
+    
 }
-
-#travel, #location {
-    background-color: white;
+span{
+    color: #2874f0;
 }
 
 .search-nav {
-    background-color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
 }
 
-.logo {
+/* .logo {
     font-size: 28px;
     font-weight: bold;
     color: #2874f0;
-}
+} */
 
 .search-box {
-    background-color: #f0f5ff;
-    width: 45%;
+    background-color: white;
+    width: 80%;
     display: flex;
     align-items: center;
     padding: 12px 15px;
     border-radius: 8px;
+    border: 2px solid #2874f0;
 }
 
 .search-box i {
@@ -91,8 +92,32 @@ header {
 
 .nav-btn {
     border: none;
-    background-color: white;
+    background-color: #ffffff;
     font-size: 15px;
     cursor: pointer;
     padding: 10px;
+}
+
+.category-nav{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+}
+
+.icon-box{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 4px;
+    text-align:center;
+    min-width: 80px;
+    border: 2px solid #2874f0;
+}
+
+img{
+    height: 50%;
+    width: 50%;
 }
