@@ -13,13 +13,17 @@ header {
     width: 80%;
     margin: 0 auto;
 }
+main {
+    width: 80%;
+    margin: 0 auto;
+}
 
 .top-nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 40px;
+    padding: 10px;
 }
 
 .top-nav-left {
@@ -34,7 +38,7 @@ header {
 .button1 {
     background-color: #ffffff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 25px;
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
@@ -52,7 +56,7 @@ span{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    padding: 15px;
     /* box-shadow: 0 2px 10px rgba(0,0,0,0.1); */
 }
 
@@ -67,7 +71,7 @@ span{
     width: 80%;
     display: flex;
     align-items: center;
-    padding: 12px 15px;
+    padding: 12px;
     border-radius: 8px;
     border: 2px solid #2874f0;
 }
@@ -98,6 +102,8 @@ span{
     padding: 10px;
 }
 
+/* ------------for the category nav------------- */
+
 .category-nav{
     display: flex;
     gap: 5px;
@@ -120,4 +126,87 @@ span{
 img{
     height: 50%;
     width: 50%;
+}
+
+/* ------------for the middle ad-banner------------- */
+
+.banners-container {
+    background-color: #d8d8d8;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    gap: 15px;
+    height: 220px;
+}
+
+.banner {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+}
+
+.banner-1 {
+    background-color: #00ffff;
+    flex: 3.5;
+}
+
+.banner-2 {
+    background-color: #d81b3f;
+    flex: 4;
+    color: #1a0307;
+}
+
+.banner-3 {
+    background-color: #f1f4dc;
+    flex: 2;
+}
+
+/* -------------for the product display------------- */
+
+.scroll-section {
+    
+    margin: 1rem;
+    background: #f7d94c;
+    padding: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.scroll-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    min-width: max-content;
+}
+
+.product-card {
+    width: 200px;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.product-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+.scroll-section {
+    width: 100%;
+    background: #f7d94c;
+    padding: 15px;
+    border-radius: 14px;
+    overflow: hidden;
 }
